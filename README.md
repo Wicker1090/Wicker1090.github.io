@@ -1,5 +1,6 @@
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,23 +17,45 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-        }      
+        }
+
         p {
             font-size: 24px;
             color: black;
         }
+
         input {
             border: 0;
             padding: 12px;
             font-size: 18px;
         }
+
             input[type="submit"] {
                 background: limegreen;
-                color: black; }
+                color: black;
+            }
+        #Con {
+            text-align: center;
+            color: purple;
+            front color: purple;
+            font-family: Helvetica;
+            color: purple;
+            
+           
+        }
+
+        p {
+            font-size: 24px;
+            color: black;
+        }
+
+        
+
     </style>
-      <img src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png" alt="logo">
+   
 </head>
-<body>    
+<body>
+     <img src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png" alt="logo" width="300" height="120"> 
     <p><b>Hi, My name is ... and i like ... and ...</b></p>
     <form>
         <div class="formBox">
@@ -44,7 +67,7 @@
         </div>
         <div>
             <label>Ampere</label>
-            <input type="number" id="A" placeholder="Ampere" >
+            <input type="number" id="A" placeholder="Ampere">
         </div>
         <div class="formBox">
             <label for="yr">Year</label>
@@ -56,7 +79,20 @@
         <div id="msg">
             <pre></pre>
         </div>
+       
     </form>
+   </head>
+   </body>
+   <body>
+         <section id="Con">
+        <form>
+        <div class="formBox">
+            <label for="Bezeichner">Art</label>
+            <input type="text" id="Bezeichner" placeholder="Art">
+        </div>
+         </form>
+   
+    
     <script>
         let Arts = [];
         const addArt = (ev) => {
@@ -66,16 +102,25 @@
                 year: document.getElementById('yr').value
             }
             Arts.push(art);
+            
             document.forms[0].reset();
             console.warn('added', { Arts });
             let pre = document.querySelector('#msg pre');
+            
             pre.textContent = '\n' + JSON.stringify(Arts, '\t', 2);
             localStorage.setItem('GetSolution', JSON.stringify(Arts));
         }
-        document.addEventListener('DOMContentLoaded', () => {
+        
+         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('btn').addEventListener('click', addArt);
+           
         });
+       
     </script>
-
+    
+</section>
 </body>
 
+
+
+</html>
