@@ -17,6 +17,7 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+        <img src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png" alt="logo">
         p {
             font-size: 24px;
             color: black;
@@ -31,8 +32,7 @@
                 color: black; }
     </style>
 </head>
-<body>  
-    <input type="image" src=[[https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png]]  width="550" height="200" />    
+<body>    
     <p><b>Hi, My name is ... and i like ... and ...</b></p>
     <form>
         <div class="formBox">
