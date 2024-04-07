@@ -17,51 +17,39 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-
         p {
             font-size: 24px;
             color: black;
         }
-
         input {
             border: 0;
             padding: 12px;
             font-size: 18px;
         }
-
             input[type="submit"] {
                 background: limegreen;
-                color: black;
-            }
+                color: black; }
     </style>
 </head>
-<body>
-  
-    <input type="image" src=("https://github.com/Wicker1090/Wicker1090.github.io/blob/cc814cf01a099307165725d75237fc8008ffc28c/weiter%20(1).png?raw=true")  width="550" height="200">
-    
+<body>  
+    <input type="image" src=("https://github.com/Wicker1090/Wicker1090.github.io/blob/cc814cf01a099307165725d75237fc8008ffc28c/weiter%20(1).png?raw=true")  width="550" height="200" />    
     <p><b>Hi, My name is ... and i like ... and ...</b></p>
     <form>
         <div class="formBox">
             <label for="Bezeichner">Art</label>
             <input type="text" id="Bezeichner" placeholder="Art">
-
         </div>
         <div>
-
-            <input type="number" placeholder="INT Spannung">/>
+            <input type="number" placeholder="INT Spannung">
         </div>
         <div>
             <label>Ampere</label>
-
-            <input type="number" id="A" placeholder="Ampere" />
+            <input type="number" id="A" placeholder="Ampere" >
         </div>
         <div class="formBox">
             <label for="yr">Year</label>
-
             <input type="number" id="yr" placeholder="Year" />
         </div>
-
-
         <div>
             <input type="submit" id="btn" value="Send" />
         </div>
@@ -79,13 +67,10 @@
             }
             Arts.push(art);
             document.forms[0].reset();
-
             console.warn('added', { Arts });
             let pre = document.querySelector('#msg pre');
             pre.textContent = '\n' + JSON.stringify(Arts, '\t', 2);
-
             localStorage.setItem('GetSolution', JSON.stringify(Arts));
-
         }
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('btn').addEventListener('click', addArt);
