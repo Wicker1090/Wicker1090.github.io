@@ -36,8 +36,8 @@
     </style>
 </head>
 <body>
-     <img src=[[https://github.com/Wicker1090/Wicker1090.github.io/blob/main/weiter%20(1).png?raw=true]] width="550" height="250" />
-  
+    <input type="image" src=[[https://github.com/Wicker1090/Wicker1090.github.io/blob/main/weiter%20(1).png?raw=true]] alt="Submit" width="550" height="200">
+    
     <p><b>Hi, My name is ... and i like ... and ...</b></p>
     <form>
         <div class="formBox">
