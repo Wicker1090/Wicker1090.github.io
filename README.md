@@ -49,7 +49,7 @@
 			<p>
 				<b>Hi, My name is ... and i like ... and ...</b>
 			</p>
-			<form name="loginForm" method="post" action="loginServlet">
+			<form>
 				<div class="formBox">
 					<label for="Bezeichner">Art</label>
 					<input type="text" id="Bezeichner" placeholder="Art">
