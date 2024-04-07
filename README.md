@@ -32,7 +32,7 @@
     </style>
 </head>
 <body>  
-    <input type="image" src=("https://github.com/Wicker1090/Wicker1090.github.io/blob/cc814cf01a099307165725d75237fc8008ffc28c/weiter%20(1).png?raw=true")  width="550" height="200" />    
+    <input type="image" src=("https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png")  width="550" height="200" />    
     <p><b>Hi, My name is ... and i like ... and ...</b></p>
     <form>
         <div class="formBox">
