@@ -69,9 +69,7 @@
 							</div>
 							<div id="msg">
 							</div>
-						</head>
-
-	
+						</head>	
 	<body onload="save()">
 		<section id="Con">
 			<script>
@@ -100,8 +98,7 @@
 				});
 				c.href = window.URL.createObjectURL(t);
 				c.click();
-				}
-			
+				}			
 
 			</script>
 		</section>
