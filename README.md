@@ -36,62 +36,44 @@
 						color: purple;
 						front color: purple;
 						font-family: Helvetica;
-						color: purple;
 						}
 						p {
 						font-size: 24px;
 						color: black;
 						}
 					</style>
-				</head>
-	<body>
-		<img src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png" alt="logo" width="300" height="120">
-			<p>
-				<b>Hi, My name is ... and i like ... and ...</b>
-			</p>
-			<form>
-				<div class="formBox">
-					<label for="Bezeichner">Art</label>
-					<input type="text" id="Bezeichner" placeholder="Art">
-        </div>
-				<div>
-					<input type="number" placeholder="INT Spannung">
-        </div>
-				<div>
-					<label>Ampere</label>
-					<input type="number" id="A" placeholder="Ampere">
-        </div>
-				<div class="formBox">
-					<label for="yr">Year</label>
-					<input type="number" id="yr" placeholder="Year" />
-				</div>
-				<div>
-					<input type="submit" id="btn" value="Send" />
-				</div>
-			</form>
-			<div id="msg">
-				<pre></pre>
-			</div>
-			</form>
-			</head>
-		</body>
-	<body>
+					<img src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png" alt="logo" width="300" height="120">
+						<p>
+							<b>Hi, My name is ... and i like ... and ...</b>
+						</p>
+						<form>
+							<div class="formBox">
+								<label for="Bezeichner">Art</label>
+								<input type="text" id="Bezeichner" placeholder="Art">									
+								</div>
+							<div>
+								<input type="number" placeholder="INT Spannung">
+								</div>
+							<div>
+								<label>Ampere</label>
+								<input type="number" id="A" placeholder="Ampere">
+								</div>
+							<div class="formBox">
+								<label for="yr">Year</label>
+								<input type="number" id="yr" placeholder="Year" />
+							</div>
+							<div>
+								<button type="submit" id="btnSave" onclick="save()">SAVE</button>
+								<input type="submit" id="btn" value="Send" />
+								<input type="text" onfocus="save()">
+							</div>
+							<div id="msg">
+							</div>
+						</head>
+
+	
+	<body onload="save()">
 		<section id="Con">
-			<form>
-				<label for="url">
-					Enter the URL you want to ping:
-				</label>
-				<br>
-					<input type="text" id="url"
-						name="url" style="margin: 10px;">
-						<br>
-							<input type="submit" value="Submit"
-								onclick="pingURL()">
-								<div class="formBox">
-									<label for="Bezeichner">Art</label>
-									<input type="text" id="Bezeichner" placeholder="Art">
-        </div>
-							</form>
 			<script>
 				let Arts = [];
 				const addArt = (ev) => {
@@ -107,26 +89,21 @@
 				pre.textContent = '\n' + JSON.stringify(Arts, '\t', 2);
 				localStorage.setItem('GetSolution', JSON.stringify(Arts));
 				}
-
 				document.addEventListener('DOMContentLoaded', () => {
 				document.getElementById('btn').addEventListener('click', addArt);
-
 				});
-
-				console.
-
-				POST /testsite/response.php HTTP/1.1
-				Host: localhost
-				Content-Length: 43
-				Content-Type: application/x-www-form-urlencoded
-
-				name=Peter+Leow&booktitle=Hands-on+with+PHP
+				function save() {
+				var c = document.createElement("a");
+				c.download = "SOSO.txt";
+				var t = new Blob([JSON.stringify(Arts)], {
+				type: "text/plain"
+				});
+				c.href = window.URL.createObjectURL(t);
+				c.click();
+				}
+			
 
 			</script>
-			src="js/script.js"></script>
 		</section>
 	</body>
-
-
-
 </html>
