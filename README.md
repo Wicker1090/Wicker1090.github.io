@@ -33,8 +33,7 @@
 						}
 						#Con {
 						text-align: center;
-						color: purple;
-						front color: purple;
+						color: purple;						
 						font-family: Helvetica;
 						}
 						p {
@@ -64,15 +63,17 @@
 							</div>
 							<div>
 								<button type="submit" id="btnSave" onclick="save()">SAVE</button>
-								<input type="submit" id="btn" value="Send" />
-								<input type="text" onfocus="save()">
+								<button type="submit" id="btn" value="Send" onclick="create()" >>Create</button>
+								
 							</div>
 							<div id="msg">
 							</div>
 						</head>	
-	<body onload="save()">
+	<body>
 		<section id="Con">
 			<script>
+                var count=1;
+                function create() {
 				let Arts = [];
 				const addArt = (ev) => {
 				ev.preventDefault();
@@ -87,20 +88,27 @@
 				pre.textContent = '\n' + JSON.stringify(Arts, '\t', 2);
 				localStorage.setItem('GetSolution', JSON.stringify(Arts));
 				}
+                
 				document.addEventListener('DOMContentLoaded', () => {
-				document.getElementById('btn').addEventListener('click', addArt);
+				document.getElementById('btnSave').addEventListener('click', addArt);
 				});
-				function save() {
+                count=5;
+                
+            }
+            
+				
 				var c = document.createElement("a");
 				c.download = "SOSO.txt";
 				var t = new Blob([JSON.stringify(Arts)], {
 				type: "text/plain"
 				});
 				c.href = window.URL.createObjectURL(t);
-				c.click();
-				}			
+                c.click();
+                count=1;
+           
 
 			</script>
+           
 		</section>
 	</body>
 </html>
