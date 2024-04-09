@@ -9,8 +9,7 @@
 	<title>Simple website</title>
 	<title>A wme!</title>
 	<style>
-		body {
-			text-align: center;
+		body {			
 			background: url("https://cdn.pixabay.com/photo/2018/02/02/17/24/background-3125893_1280.jpg");
 			color: white;
 			font-family: Helvetica;
@@ -44,11 +43,13 @@
 		}
 		.squares {
 			display: flex;
-			justify-content: center;
+			
+			position:absolute;
+			right: 300px;
 		}
 		.icon1,
 		.icon2 {
-			width: 240px;
+			width: 500px;
 			height: 240px;			
 		}
 		.icon1 {			
@@ -68,15 +69,15 @@
     width: 200px;
     height: 200px;
 	max-width: 100%;
-	position: relative;     
+	position: center;     
  }
 #box div{    
     height: 100%;    
     border-radius: 50%;
 	aspect-ratio: 1;
 	position:absolute;
-    background-color: rgb(15, 14, 14);
-    box-shadow: inset 0 0 1em rgba(0, 0, 0, 0);
+    background-color: rgb(145, 27, 27);
+    
  }
 		#Con {
 			text-align: center;
@@ -94,37 +95,44 @@
 		<b>Hi, My name is ... and i like ... and ...</b>
 	</p>
 	<form>
-		<div class="squares">			
+		<div class="squares">
 			<div class="icon1">
-				<div>
 				<div class="formBoxL">					
 					<label for="Bezeichner">
-						<input type="text" id="Bezeichner" placeholder="Art">						
+						<input type="text" id="Bezeichner" placeholder="Art">
 				</div>
-				<div class="formBoxK">					
+				<div class="formBoxK">
+					<div>
 					<label for="Spann">
-						<input type="number" placeholder="INT Spannung">						
+						<input type="number" placeholder="INT Spannung">
+						</div>
 				</div>
-				<div class="formBoxL">					
+				<div class="formBoxL">
+					<div>
 					<label for="Amp">
 						<input type="number" id="A" placeholder="Ampere">
 						</div>
 				</div>
 			</div>
-			<div id="box">
-			</div>
-			<div class="icon2">   					
-				<div class="formBoxK">					
+			
+			<div class="icon2">
+				<div class="formBoxK">
+					<div>
 					<label for="yr">
-						<input type="number" id="yr" placeholder="Year" />						
+						<input type="number" id="yr" placeholder="Year" />
+						</div>
 				</div>
-				<div class="formBoxL">					
+				<div class="formBoxL">
+					<div>
 					<label for="Anst">
-						<input type="text" id="an" placeholder="Anst" />						
+						<input type="text" id="an" placeholder="Anst" />
+						</div>
 				</div>
-				<div class="formBoxK">					
+				<div class="formBoxK">
+					<div>
 					<label for="pos">
-						<input type="number" id="ps" placeholder="Pos" />						
+						<input type="number" id="ps" placeholder="Pos" />
+						</div>
 				</div>
 			</div>
 		</div>
