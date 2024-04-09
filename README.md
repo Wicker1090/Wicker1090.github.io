@@ -1,5 +1,3 @@
-
-
 <html lang="en">
 
 <head>
@@ -9,7 +7,7 @@
 	<title>Simple website</title>
 	<title>A wme!</title>
 	<style>
-		body {			
+		body {
 			background: url("https://cdn.pixabay.com/photo/2018/02/02/17/24/background-3125893_1280.jpg");
 			color: white;
 			font-family: Helvetica;
@@ -18,72 +16,84 @@
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 		}
+
 		p {
 			font-size: 24px;
 			color: black;
 		}
+
 		input {
 			border: 0;
 			padding: 12px;
 			font-size: 18px;
 		}
+
 		input[type="submit"] {
 			background: limegreen;
 			color: black;
 		}
-		.formBoxL{			
-			width: 160px*(scrolled/10);    		
+
+		.formBoxL {
+			width: 160px*(scrolled/10);
 			max-width: 80%;
 			left: 10px;
 		}
-		.formBoxK{			
-			width: 1200px;    		
+
+		.formBoxK {
+			width: 1200px;
 			max-width: 100%;
 			left: 10px;
 		}
+
 		.squares {
 			display: flex;
-			
-			position:absolute;
-			right: 300px;
+			position: absolute;
+
 		}
+
 		.icon1,
 		.icon2 {
 			width: 500px;
-			height: 240px;			
+			height: 240px;
 		}
-		.icon1 {			
+
+		.icon1 {
 			display: flex;
 			flex-wrap: wrap;
 			position: relative;
-			justify-content: center;		
+			justify-content: center;
 		}
-		.icon2 {			
+
+		.icon2 {
 			border-style: ridge;
 			display: flex;
 			flex-wrap: wrap;
 			align-items: left;
 			justify-content: center;
-   }
+		}
+
 		#box {
-    width: 200px;
-    height: 200px;
-	max-width: 100%;
-	position: center;     
- }
-#box div{    
-    height: 100%;    
-    border-radius: 50%;
-	aspect-ratio: 1;
-	position:absolute;
-    background-color: rgb(145, 27, 27);
-    
- }
+			width: 200px;
+			height: 200px;
+			max-width: 100%;
+			position: center;
+		}
+
+		#box div {
+			height: 100%;
+			border-radius: 50%;
+			aspect-ratio: 1;
+			position: absolute;
+			background-color: rgb(145, 27, 27);
+
+		}
+
 		#Con {
 			text-align: center;
 			color: purple;
 			font-family: Helvetica;
 		}
+
 		p {
 			font-size: 24px;
 			color: black;
@@ -94,99 +104,104 @@
 	<p>
 		<b>Hi, My name is ... and i like ... and ...</b>
 	</p>
-	<form>
-		<div class="squares">
-			<div class="icon1">
-				<div class="formBoxL">					
-					<label for="Bezeichner">
-						<input type="text" id="Bezeichner" placeholder="Art">
-				</div>
-				<div class="formBoxK">
-					<div>
+	<div class="squares">
+		<div class="icon1">
+			<div class="formBoxL">
+				<label for="Bezeichner">
+					<input type="text" id="Bezeichner" placeholder="Art">
+			</div>
+			<div class="formBoxK">
+				<div>
 					<label for="Spann">
 						<input type="number" placeholder="INT Spannung">
-						</div>
-				</div>
-				<div class="formBoxL">
-					<div>
-					<label for="Amp">
-						<input type="number" id="A" placeholder="Ampere">
-						</div>
 				</div>
 			</div>
-			
+			<div class="formBoxL">
+				<div>
+					<label for="Amp">
+						<input type="number" id="A" placeholder="Ampere">
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+</head>
+
+<section>
+	<form>
+
+		<body>
 			<div class="icon2">
 				<div class="formBoxK">
 					<div>
-					<label for="yr">
-						<input type="number" id="yr" placeholder="Year" />
-						</div>
+						<label for="yr">
+							<input type="number" id="yr" placeholder="Year" />
+					</div>
 				</div>
 				<div class="formBoxL">
 					<div>
-					<label for="Anst">
-						<input type="text" id="an" placeholder="Anst" />
-						</div>
+						<label for="Anst">
+							<input type="text" id="an" placeholder="Anst" />
+					</div>
 				</div>
 				<div class="formBoxK">
 					<div>
-					<label for="pos">
-						<input type="number" id="ps" placeholder="Pos" />
-						</div>
+						<label for="pos">
+							<input type="number" id="ps" placeholder="Pos" />
+					</div>
 				</div>
 			</div>
-		</div>
-		<div>
-			<input type="submit" id="btn" value="Send" />
-		</div>
-		<div id="msg">
-		</div>
+			<div>
+				<input type="submit" id="btn" value="Send" />
+			</div>
 	</form>
-</head>
 
-
-<body>
+</section>
+</div>
+<script>
+	window.addEventListener('scroll', () => {
+		const scrolable = document.documentElement.scrollHeight - window.innerHeight;
+		const scrolled = window.scrollY;
+		console.log(scrolled);
+	})
+</script>
+<section id="Con">
 	<script>
-        window.addEventListener('scroll',()=>{
-            const scrolable = document.documentElement.scrollHeight -window.innerHeight;
-            const scrolled=window.scrollY;
-            console.log(scrolled);
-        })
-    </script>
-	<section id="Con">
-		<script>
-			let Arts = [];
-			const addArt = (ev) => {
-				ev.preventDefault();
-				let art = {
-					bezeichner: document.getElementById('Bezeichner').value,
-					year: document.getElementById('yr').value
-				}
-				Arts.push(art);
-				document.forms[0].reset();
-				save();
-				document.forms[0].reset();
-				console.warn('added', { Arts });
-				let pre = document.querySelector('#msg pre');
-				pre.textContent = '\n' + JSON.stringify(Arts, '\t', 2);
-				localStorage.setItem('GetSolution', JSON.stringify(Arts));
+		let Arts = [];
+		const addArt = (ev) => {
+			ev.preventDefault();
+			let art = {
+				bezeichner: document.getElementById('Bezeichner').value,
+				year: document.getElementById('yr').value
 			}
-			document.addEventListener('DOMContentLoaded', () => {
-				document.getElementById('btn').addEventListener('click', addArt);
+			Arts.push(art);
+			document.forms[0].reset();
+			save();
+			document.forms[0].reset();
+			console.warn('added', { Arts });
+			let pre = document.querySelector('#msg pre');
+			pre.textContent = '\n' + JSON.stringify(Arts, '\t', 2);
+			localStorage.setItem('GetSolution', JSON.stringify(Arts));
+		}
+		document.addEventListener('DOMContentLoaded', () => {
+			document.getElementById('btn').addEventListener('click', addArt);
+		});
+	</script>
+	<script>
+		function save() {
+			var c = document.createElement("a");
+			c.download = "SOSO.txt";
+			var t = new Blob([JSON.stringify(Arts)], {
+				type: "text/plain"
 			});
-		</script>
-		<script>
-			function save() {
-				var c = document.createElement("a");
-				c.download = "SOSO.txt";
-				var t = new Blob([JSON.stringify(Arts)], {
-					type: "text/plain"
-				});
-				c.href = window.URL.createObjectURL(t);
-				c.click();
-			}
-		</script>
-	</section>
+			c.href = window.URL.createObjectURL(t);
+			c.click();
+		}
+	</script>
+</section>
 </body>
 
 </html>
