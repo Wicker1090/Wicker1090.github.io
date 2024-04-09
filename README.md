@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 
 <html lang="en">
 
@@ -19,24 +19,21 @@
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 		}
-
 		p {
 			font-size: 24px;
 			color: black;
 		}
-
 		input {
 			border: 0;
 			padding: 12px;
 			font-size: 18px;
 		}
-
 		input[type="submit"] {
 			background: limegreen;
 			color: black;
 		}
 		.formBoxL{			
-			width: 160px;    		
+			width: 160px*(scrolled/10);    		
 			max-width: 80%;
 			left: 10px;
 		}
@@ -45,12 +42,10 @@
 			max-width: 100%;
 			left: 10px;
 		}
-
 		.squares {
 			display: flex;
 			justify-content: center;
 		}
-
 		.icon1,
 		.icon2 {
 			width: 240px;
@@ -62,24 +57,19 @@
 			position: relative;
 			justify-content: center;		
 		}
-
-		.icon2 {
-			
+		.icon2 {			
 			border-style: ridge;
 			display: flex;
 			flex-wrap: wrap;
 			align-items: left;
 			justify-content: center;
-		}
-
+   }
 		#box {
     width: 200px;
     height: 200px;
 	max-width: 100%;
-	position: relative; 
-    
+	position: relative;     
  }
-
 #box div{    
     height: 100%;    
     border-radius: 50%;
@@ -93,7 +83,6 @@
 			color: purple;
 			font-family: Helvetica;
 		}
-
 		p {
 			font-size: 24px;
 			color: black;
@@ -121,8 +110,7 @@
 				</div>
 			</div>
 			<div id="box">
-				<div>
-					
+				<div>					
 				</div>
 			   </div>
 			<div class="icon2">
@@ -137,23 +125,27 @@
 				<div class="formBoxK">
 					<label for="pos">
 					<input type="number" id="ps" placeholder="Pos" />
-				</div>			  
-			   
+				</div>			   
 		   </div>
 	   </div>
 	   <div>
 		<input type="submit" id="btn" value="Send" />
-	</div>
-		
+	</div>		
 		<div id="msg">
 		</div>
 </head>
 
 
 <body>
+	<script>
+        window.addEventListener('scroll',()=>{
+            const scrolable = document.documentElement.scrollHeight -window.innerHeight;
+            const scrolled=window.scrollY;
+            console.log(scrolled);
+        })
+    </script>
 	<section id="Con">
 		<script>
-
 			let Arts = [];
 			const addArt = (ev) => {
 				ev.preventDefault();
