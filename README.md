@@ -98,41 +98,40 @@
 			<div class="icon1">
 				<div class="formBoxL">
 					<label for="Bezeichner">
-					<input type="text" id="Bezeichner" placeholder="Art">
+						<input type="text" id="Bezeichner" placeholder="Art">
 				</div>
 				<div class="formBoxK">
 					<label for="Spann">
-					<input type="number" placeholder="INT Spannung">
+						<input type="number" placeholder="INT Spannung">
 				</div>
 				<div class="formBoxL">
 					<label for="Amp">
-					<input type="number" id="A" placeholder="Ampere">
+						<input type="number" id="A" placeholder="Ampere">
 				</div>
 			</div>
 			<div id="box">
-				<div>					
-				</div>
-			   </div>
+			</div>
 			<div class="icon2">
 				<div class="formBoxK">
 					<label for="yr">
-					<input type="number" id="yr" placeholder="Year" />
+						<input type="number" id="yr" placeholder="Year" />
 				</div>
 				<div class="formBoxL">
 					<label for="Anst">
-				<input type="text" id="an" placeholder="Anst" />
+						<input type="text" id="an" placeholder="Anst" />
 				</div>
 				<div class="formBoxK">
 					<label for="pos">
-					<input type="number" id="ps" placeholder="Pos" />
-				</div>			   
-		   </div>
-	   </div>
-	   <div>
-		<input type="submit" id="btn" value="Send" />
-	</div>		
+						<input type="number" id="ps" placeholder="Pos" />
+				</div>
+			</div>
+		</div>
+		<div>
+			<input type="submit" id="btn" value="Send" />
+		</div>
 		<div id="msg">
 		</div>
+	</form>
 </head>
 
 
