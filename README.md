@@ -1,114 +1,191 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-				<meta name="viewport" content="width=device-width, initial-scale=1.0">
-					<title>Simple website</title>
-					<title>A wme!</title>
-					<style>
-						body {
-						text-align: center;
-						background: url("https://cdn.pixabay.com/photo/2018/02/02/17/24/background-3125893_1280.jpg");
-						color: white;
-						font-family: Helvetica;
-						background-size: cover;
-						background-position: center center;
-						background-repeat: no-repeat;
-						background-attachment: fixed;
-						}
-						p {
-						font-size: 24px;
-						color: black;
-						}
-						input {
-						border: 0;
-						padding: 12px;
-						font-size: 18px;
-						}
-						input[type="submit"] {
-						background: limegreen;
-						color: black;
-						}
-						#Con {
-						text-align: center;
-						color: purple;						
-						font-family: Helvetica;
-						}
-						p {
-						font-size: 24px;
-						color: black;
-						}
-					</style>
-					<img src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png" alt="logo" width="300" height="120">
-						<p>
-							<b>Hi, My name is ... and i like ... and ...</b>
-						</p>
-						<form>
-							<div class="formBox">
-								<label for="Bezeichner">Art</label>
-								<input type="text" id="Bezeichner" placeholder="Art">									
-								</div>
-							<div>
-								<input type="number" placeholder="INT Spannung">
-								</div>
-							<div>
-								<label>Ampere</label>
-								<input type="number" id="A" placeholder="Ampere">
-								</div>
-							<div class="formBox">
-								<label for="yr">Year</label>
-								<input type="number" id="yr" placeholder="Year" />
-							</div>
-							<div>
-								<button type="submit" id="btnSave" onclick="save()">SAVE</button>
-								<button type="submit" id="btn" value="Send" onclick="create()" >>Create</button>
-								
-							</div>
-							<div id="msg">
-							</div>
-						</head>	
-	<body>
-		<section id="Con">
-			<script>
-                var count=1;
-                function create() {
-				let Arts = [];
-				const addArt = (ev) => {
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple website</title>
+	<title>A wme!</title>
+	<style>
+		body {
+			text-align: center;
+			background: url("https://cdn.pixabay.com/photo/2018/02/02/17/24/background-3125893_1280.jpg");
+			color: white;
+			font-family: Helvetica;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+
+		p {
+			font-size: 24px;
+			color: black;
+		}
+
+		input {
+			border: 0;
+			padding: 12px;
+			font-size: 18px;
+		}
+
+		input[type="submit"] {
+			background: limegreen;
+			color: black;
+		}
+		.formBoxL{			
+			width: 160px;    		
+			max-width: 80%;
+			left: 10px;
+		}
+		.formBoxK{			
+			width: 1200px;    		
+			max-width: 100%;
+			left: 10px;
+		}
+
+		.squares {
+			display: flex;
+			justify-content: center;
+		}
+
+		.icon1,
+		.icon2 {
+			width: 240px;
+			height: 240px;			
+		}
+		.icon1 {			
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+			justify-content: center;		
+		}
+
+		.icon2 {
+			
+			border-style: ridge;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: left;
+			justify-content: center;
+		}
+
+		#box {
+    width: 200px;
+    height: 200px;
+	max-width: 100%;
+	position: relative; 
+    
+ }
+
+#box div{    
+    height: 100%;    
+    border-radius: 50%;
+	aspect-ratio: 1;
+	position:absolute;
+    background-color: rgb(15, 14, 14);
+    box-shadow: inset 0 0 1em rgba(0, 0, 0, 0);
+ }
+		#Con {
+			text-align: center;
+			color: purple;
+			font-family: Helvetica;
+		}
+
+		p {
+			font-size: 24px;
+			color: black;
+		}
+	</style>
+	<img src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png" alt="logo"
+		width="300" height="120">
+	<p>
+		<b>Hi, My name is ... and i like ... and ...</b>
+	</p>
+	<form>
+		<div class="squares">
+			<div class="icon1">
+				<div class="formBoxL">
+					<label for="Bezeichner">
+					<input type="text" id="Bezeichner" placeholder="Art">
+				</div>
+				<div class="formBoxK">
+					<label for="Spann">
+					<input type="number" placeholder="INT Spannung">
+				</div>
+				<div class="formBoxL">
+					<label for="Amp">
+					<input type="number" id="A" placeholder="Ampere">
+				</div>
+			</div>
+			<div id="box">
+				<div>
+					
+				</div>
+			   </div>
+			<div class="icon2">
+				<div class="formBoxK">
+					<label for="yr">
+					<input type="number" id="yr" placeholder="Year" />
+				</div>
+				<div class="formBoxL">
+					<label for="Anst">
+				<input type="text" id="an" placeholder="Anst" />
+				</div>
+				<div class="formBoxK">
+					<label for="pos">
+					<input type="number" id="ps" placeholder="Pos" />
+				</div>			  
+			   
+		   </div>
+	   </div>
+	   <div>
+		<input type="submit" id="btn" value="Send" />
+	</div>
+		
+		<div id="msg">
+		</div>
+</head>
+
+
+<body>
+	<section id="Con">
+		<script>
+
+			let Arts = [];
+			const addArt = (ev) => {
 				ev.preventDefault();
 				let art = {
-				bezeichner: document.getElementById('Bezeichner').value,
-				year: document.getElementById('yr').value
+					bezeichner: document.getElementById('Bezeichner').value,
+					year: document.getElementById('yr').value
 				}
 				Arts.push(art);
+				document.forms[0].reset();
+				save();
 				document.forms[0].reset();
 				console.warn('added', { Arts });
 				let pre = document.querySelector('#msg pre');
 				pre.textContent = '\n' + JSON.stringify(Arts, '\t', 2);
 				localStorage.setItem('GetSolution', JSON.stringify(Arts));
-				}
-                
-				document.addEventListener('DOMContentLoaded', () => {
-				document.getElementById('btnSave').addEventListener('click', addArt);
-				});
-                count=5;
-                
-            }
-            
-				
+			}
+			document.addEventListener('DOMContentLoaded', () => {
+				document.getElementById('btn').addEventListener('click', addArt);
+			});
+		</script>
+		<script>
+			function save() {
 				var c = document.createElement("a");
 				c.download = "SOSO.txt";
 				var t = new Blob([JSON.stringify(Arts)], {
-				type: "text/plain"
+					type: "text/plain"
 				});
 				c.href = window.URL.createObjectURL(t);
-                c.click();
-                count=1;
-           
+				c.click();
+			}
+		</script>
+	</section>
+</body>
 
-			</script>
-           
-		</section>
-	</body>
 </html>
