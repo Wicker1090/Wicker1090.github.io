@@ -97,32 +97,44 @@
 		<div class="squares">
 			<div class="icon1">
 				<div class="formBoxL">
+					<div>
 					<label for="Bezeichner">
 						<input type="text" id="Bezeichner" placeholder="Art">
+						</div>
 				</div>
 				<div class="formBoxK">
+					<div>
 					<label for="Spann">
 						<input type="number" placeholder="INT Spannung">
+						</div>
 				</div>
 				<div class="formBoxL">
+					<div>
 					<label for="Amp">
 						<input type="number" id="A" placeholder="Ampere">
+						</div>
 				</div>
 			</div>
 			<div id="box">
 			</div>
 			<div class="icon2">
 				<div class="formBoxK">
+					<div>
 					<label for="yr">
 						<input type="number" id="yr" placeholder="Year" />
+						</div>
 				</div>
 				<div class="formBoxL">
+					<div>
 					<label for="Anst">
 						<input type="text" id="an" placeholder="Anst" />
+						</div>
 				</div>
 				<div class="formBoxK">
+					<div>
 					<label for="pos">
 						<input type="number" id="ps" placeholder="Pos" />
+						</div>
 				</div>
 			</div>
 		</div>
