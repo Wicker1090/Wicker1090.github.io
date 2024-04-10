@@ -62,13 +62,9 @@
             margin-bottom: 50px;
         }
         @media (max-width: 300px) {
-            main {
-                background-color: black;
+            main {               
                 flex-wrap: nowrap;
-            }
-            div{
-                background-color: aqua;
-            }
+            }           
         }
     </style>
     <head>
