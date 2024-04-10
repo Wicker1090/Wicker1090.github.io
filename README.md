@@ -49,7 +49,7 @@
             border: 0;
             padding: 0px;
             font-size: 18px;
-            border: 5%
+            border: 20%
         }
         input[type="submit"] {
             background: limegreen;
