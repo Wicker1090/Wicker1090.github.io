@@ -16,8 +16,7 @@
             background-attachment: fixed;
         }
         div {
-            max-width: 1200;
-            display: flex;
+            max-width: 1200;            
             justify-content: center;
             align-items: center;
         }
