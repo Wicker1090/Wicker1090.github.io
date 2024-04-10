@@ -18,6 +18,7 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+
         div {
             max-width: 600px;
             height: 40px;
@@ -26,6 +27,8 @@
             margin-bottom: 30px;
         }
     </style>
+
+
     <div>
         <p class="border-block"> <img class="logo"
                 src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png"
@@ -35,30 +38,34 @@
     <h1>
         <b>JSON</b>
     </h1>
+
 </head>
+
 <body>
     <form>
         <div>
             <label for="Bezeichner">
-                <input type="text" id="Bezeichner" placeholder="Art" class="formBox" />
+                <input type="text" id="Bezeichner" placeholder="Art" class="formBox" >
                 <label for="Spann">
                     <input type="number" id="U" placeholder="U" class="formBox" />
-        </div>
         <div>
             <label for="Amp">
-                <input type="number" id="A" placeholder="A" class="formBox" />
+                <input type="number" id="A" placeholder="A" class="formBox" >
                 <label for="yr">
                     <input type="text" id="au" placeholder="Au" class="formBox" />
-        </div>
         <div>
             <label for="Anst">
-                <input type="text" id="an" placeholder="An" class="formBox" />
+                <input type="text" id="an" placeholder="An" class="formBox" >
                 <label for="pos">
                     <input type="number" id="ps" placeholder="P" class="formBox" />
-        </div>
     </form>
-    <div></div>
     <div>
+        <form ><input type="submit" id="btn" value="Send" />
+    </div>
+    
+    <div id="msg">
+    </div>
+    
 </body>
 <script>
     window.addEventListener('scroll', () => {
@@ -66,6 +73,7 @@
         const scrolled = window.scrollY;
         console.log(scrolled);
     })
+
     let Arts = [];
     const addArt = (ev) => {
         ev.preventDefault();
@@ -88,6 +96,7 @@
     document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('btn').addEventListener('click', addArt);
     });
+
     function save() {
         var c = document.createElement("a");
         c.download = "SOSO.txt";
