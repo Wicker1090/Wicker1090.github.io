@@ -1,7 +1,6 @@
-<!DOCTYPE html>
+
 
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,14 +28,10 @@
     <div>
         <p class="border-block"> <img class="logo"
                 src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png"
-                width="300" height="150" />       
-    </div>
+                width="300" height="150" />     
     <h1>
         <b>JSON</b>
     </h1>
-
-</head>
-
 <body>
     <form>
         <div>
@@ -57,10 +52,8 @@
     </form>
     <div>
         <form ><input type="submit" id="btn" value="Send" />
-    </div>    
     <div id="msg">
-    </div>    
-</body>
+    </div>
 <script>
     window.addEventListener('scroll', () => {
         const scrolable = document.documentElement.scrollHeight - window.innerHeight;
@@ -99,4 +92,4 @@
         c.click();
     }
 </script>
-</html>
+
