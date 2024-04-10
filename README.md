@@ -103,8 +103,7 @@
                         <label for="pos">
                             <input type="number" id="ps" placeholder="P" class="formBox">                    
         </main>
-    <div></div>
-    <div>
+    <div></div>    
     <input type="submit" id="btn" value="Send" class="formBox">
     </form>
     </div>
