@@ -1,4 +1,3 @@
-
 <html lang="en">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +11,9 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-        }
+        }        
         div {
-            max-width: 600px;            
+            max-width: 1200;            
             justify-content: center;
             align-items: center;
         }
@@ -23,9 +22,11 @@
             max-width: 40;
         }
         .formBox {
-		padding: 0px;
-		width: 70px;			
+			width: 70px;			
 		}
+        .border-block {
+            writing-mode: Horizontal-tb;
+        }        
         .logo {
             width: 280px;
             height: 120px;
@@ -43,13 +44,12 @@
         main {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
         }
         input {
-            width: 80%;
-            border: 0;
-            padding: 0px;
-            font-size: 18px;
-            border: 20%
+            width: 100%;            
+            font-size: 7px;
+            border: 70%
         }
         input[type="submit"] {
             background: limegreen;
@@ -58,14 +58,14 @@
         img{
         display:block;}
         div {
-            flex-basis: 70%;
-            height: 60px;
-            margin-bottom: 50px;
+            flex-basis: 20%;
+            height: 50px;
+            margin-bottom: 30px;
         }
-        @media (max-width: 300px) {
-            main {               
+        @media (min-width: 300px) {
+            main {
                 flex-wrap: nowrap;
-            }           
+            }          
         }
     </style>
     <head>
@@ -76,38 +76,42 @@
                 src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png" />
         </p>
     </div>
+    <div>
+    </div>
+    <div>
         <h1>
             <b>JSON</b>
         </h1>
+    </div>
     <div id="#div">
     </div>
 </head>
-<body>   
-        <main
-		 <form>
-		<div></div>
-			 <div>
+<body>
+    <form class="#div">        
+            <div></div>
+            <div class="formBox">	
                 <label for="Bezeichner">
-                    <input type="text" id="Bezeichner" placeholder="Art" class="formBox"/>
+                    <input type="text" id="Bezeichner" placeholder="Art"class="formBox"/>
                     <label for="Spann">
                         <input type="number" id="U" placeholder="U"class="formBox"/>
                         <label for="Amp">
                             <input type="number" id="A" placeholder="A"class="formBox"/>
-				</form>
-            <div></div>
-		 <form>
+            </div>
+            <div class="formBox">	
                 <label for="yr">
-                    <input type="text" id="au" placeholder="Au" class="formBox">
+                    <input type="text" id="au" placeholder="Au" class="formBox"/>
                     <label for="Anst">
-                        <input type="text" id="an" placeholder="An" class="formBox">
+                        <input type="text" id="an" placeholder="An" class="formBox"/>
                         <label for="pos">
-                            <input type="number" id="ps" placeholder="P" class="formBox">
-				 </form>
-       >
+                            <input type="number" id="ps" placeholder="P" class="formBox"/>
+            </div>
+            <div></div>       
+    </form>
     <div></div>
-	<form>
-    <input type="submit" id="btn" value="Send" class="formBox">
-    </form>  
+    <div>
+        <form ><input type="submit" id="btn" value="Send" /> </form>
+    </div>
+    
     <div id="msg">
     </div>
 </body>
@@ -117,8 +121,6 @@
         const scrolled = window.scrollY;
         console.log(scrolled);
     })
-</script>
-    <script>
         let Arts = [];
         const addArt = (ev) => {
             ev.preventDefault();
@@ -140,9 +142,7 @@
         }
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('btn').addEventListener('click', addArt);
-        });
-    </script>
-    <script>
+        });   
         function save() {
             var c = document.createElement("a");
             c.download = "SOSO.txt";
@@ -153,3 +153,7 @@
             c.click();
         }
     </script>
+
+
+
+](url)](url)
