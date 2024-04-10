@@ -85,7 +85,7 @@
     </div>
 </head>
 <body>
-    <form class="#div">
+    <form>
         <main>
             <div></div>
             <div class="formBox">	
