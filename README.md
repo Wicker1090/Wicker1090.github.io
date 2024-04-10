@@ -1,10 +1,7 @@
 <html lang="en">
-
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <style>
         body {
             background: url("https://cdn.pixabay.com/photo/2018/02/02/17/24/background-3125893_1280.jpg");
@@ -15,7 +12,6 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-        
         div {
             max-width: 1200;            
             justify-content: center;
@@ -26,18 +22,14 @@
             max-width: 40;
         }
         .formBox {
-			width: 16px;			
-			
-		}
-        
-        
+			width: 16px;	
+		}    
         .logo {
             width: 280px;
             height: 120px;
             display: flex;
             justify-content: center;
             align-items: center;
-
         }
         h1,
         h2 {
@@ -69,13 +61,10 @@
             height: 50px;
             margin-bottom: 0.5rem;
         }
-
         @media (max-width: 250px) {
             main {
                 flex-wrap: nowrap;
-            }
-
-           
+            }           
         }
     </style>
     <head>
