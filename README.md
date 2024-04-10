@@ -3,7 +3,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
@@ -23,6 +23,7 @@
         }
         #div{
             min-height: auto;
+            max-width: 40;
         }
         .border-block {
             writing-mode: Horizontal-tb;
@@ -49,7 +50,7 @@
         }
         input {
             border: 0;
-            padding: 5px;
+            padding: 0px;
             font-size: 18px;
             border: 5%
         }
@@ -60,12 +61,12 @@
         img{
         display:block;}
         div {
-            flex-basis: 40%;
+            flex-basis: 90%;
             height: 50px;
             margin-bottom: 0.5rem;
         }
 
-        @media (min-width: 200px) {
+        @media (min-width: 150px) {
             main {
                 flex-wrap: nowrap;
             }
@@ -90,14 +91,14 @@
             <b>JSON</b>
         </h1>
     </div>
-    <div>
+    <div id="#div">
     </div>
 </head>
 <body>
-    <form class="exampleText">
+    <form class="#div">
         <main>
             <div></div>
-            <div>
+            <div id="#div">
                 <label for="Bezeichner">
                     <input type="text" id="Bezeichner" placeholder="Art">
                     <label for="Spann">
@@ -105,7 +106,7 @@
                         <label for="Amp">
                             <input type="number" id="A" placeholder="A">
             </div>
-            <div>
+            <div id="#div">
                 <label for="yr">
                     <input type="text" id="au" placeholder="Au" />
                     <label for="Anst">
