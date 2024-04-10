@@ -118,7 +118,6 @@
         console.log(scrolled);
     })
 </script>
-<section>
     <script>
         let Arts = [];
         const addArt = (ev) => {
@@ -154,4 +153,3 @@
             c.click();
         }
     </script>
-</section>
