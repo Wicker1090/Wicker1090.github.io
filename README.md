@@ -29,9 +29,7 @@
 			width: 16px;			
 			
 		}
-        .border-block {
-            writing-mode: Horizontal-tb;
-        }
+        
         
         .logo {
             width: 280px;
@@ -72,7 +70,7 @@
             margin-bottom: 0.5rem;
         }
 
-        @media (min-width: 150px) {
+        @media (max-width: 250px) {
             main {
                 flex-wrap: nowrap;
             }
@@ -104,26 +102,26 @@
             <div></div>
             <div class="formBox">	
                 <label for="Bezeichner">
-                    <input type="text" id="Bezeichner" placeholder="Art">
+                    <input type="text" id="Bezeichner" placeholder="Art" class="formBox">
                     <label for="Spann">
-                        <input type="number" id="U" placeholder="U">
+                        <input type="number" id="U" placeholder="U"class="formBox">
                         <label for="Amp">
-                            <input type="number" id="A" placeholder="A">
+                            <input type="number" id="A" placeholder="A"class="formBox">
             </div>
             <div class="formBox">	
                 <label for="yr">
-                    <input type="text" id="au" placeholder="Au" />
+                    <input type="text" id="au" placeholder="Au" class="formBox">
                     <label for="Anst">
-                        <input type="text" id="an" placeholder="An" />
+                        <input type="text" id="an" placeholder="An" class="formBox">
                         <label for="pos">
-                            <input type="number" id="ps" placeholder="P" />
+                            <input type="number" id="ps" placeholder="P" class="formBox">
             </div>
             <div></div>
         </main>
     </form>
     <div></div>
     <div>
-        <form ><input type="submit" id="btn" value="Send" /> </form>
+        <form ><input type="submit" id="btn" value="Send" class="formBox"> </form>
     </div>
     </div>
     <div id="msg">
