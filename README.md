@@ -90,19 +90,19 @@
             <div></div>
             <div class="formBox">	
                 <label for="Bezeichner">
-                    <input type="text" id="Bezeichner" placeholder="Art" class="formBox">
+                    <input type="text" id="Bezeichner" placeholder="Art" class="formBox"/>
                     <label for="Spann">
-                        <input type="number" id="U" placeholder="U"class="formBox">
+                        <input type="number" id="U" placeholder="U"class="formBox"/>
                         <label for="Amp">
-                            <input type="number" id="A" placeholder="A"class="formBox">
+                            <input type="number" id="A" placeholder="A"class="formBox"/>
             </div>
             <div class="formBox">	
                 <label for="yr">
-                    <input type="text" id="au" placeholder="Au" class="formBox">
+                    <input type="text" id="au" placeholder="Au" class="formBox"/>
                     <label for="Anst">
-                        <input type="text" id="an" placeholder="An" class="formBox">
+                        <input type="text" id="an" placeholder="An" class="formBox"/>
                         <label for="pos">
-                            <input type="number" id="ps" placeholder="P" class="formBox">
+                            <input type="number" id="ps" placeholder="P" class="formBox"/>
             </div>
             <div></div>
         </main>
