@@ -54,6 +54,8 @@
             background: limegreen;
             color: black;
         }
+        img{
+        display:block;}
         div {
             flex-basis: 40%;
             height: 50px;
