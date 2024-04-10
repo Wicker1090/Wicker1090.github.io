@@ -101,8 +101,7 @@
                     <label for="Anst">
                         <input type="text" id="an" placeholder="An" class="formBox">
                         <label for="pos">
-                            <input type="number" id="ps" placeholder="P" class="formBox">
-            </div>           
+                            <input type="number" id="ps" placeholder="P" class="formBox">                    
         </main>
     <div></div>
     <div>
