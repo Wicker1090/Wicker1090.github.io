@@ -22,8 +22,8 @@
             max-width: 40;
         }
         .formBox {
-            padding: 0px;
-			width: 70px;			
+		padding: 0px;
+		width: 70px;			
 		}
         .logo {
             width: 280px;
