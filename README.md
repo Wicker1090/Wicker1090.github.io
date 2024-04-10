@@ -82,7 +82,7 @@
     </div>
 </head>
 <body>   
-        <main>
+        <main
 		 <form>
 		<div></div>
 			 <div>
@@ -102,13 +102,11 @@
                         <label for="pos">
                             <input type="number" id="ps" placeholder="P" class="formBox">
 				 </form>
-        </main>
+       >
     <div></div>
 	<form>
     <input type="submit" id="btn" value="Send" class="formBox">
-    </form>
-    </div>
-    </div>
+    </form>  
     <div id="msg">
     </div>
 </body>
