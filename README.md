@@ -1,26 +1,31 @@
+<!DOCTYPE html>
+
 <html lang="en">
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-    body {
-        background: url("https://cdn.pixabay.com/photo/2018/02/02/17/24/background-3125893_1280.jpg");
-        color: white;
-        font-family: Helvetica;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    div {
-        max-width: 600px;
-        height: 40px;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-</style>
+
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple website</title>
+    <title>A wme!</title>
+    <style>
+        body {
+            background: url("https://cdn.pixabay.com/photo/2018/02/02/17/24/background-3125893_1280.jpg");
+            color: white;
+            font-family: Helvetica;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        div {
+            max-width: 600px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+    </style>
     <div>
         <p class="border-block"> <img class="logo"
                 src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png"
@@ -37,20 +42,20 @@
             <label for="Bezeichner">
                 <input type="text" id="Bezeichner" placeholder="Art" class="formBox" />
                 <label for="Spann">
-                    <input type="number" id="U" placeholder="U" class="formBox" />                    
+                    <input type="number" id="U" placeholder="U" class="formBox" />
         </div>
         <div>
             <label for="Amp">
                 <input type="number" id="A" placeholder="A" class="formBox" />
-            <label for="yr">
-                <input type="text" id="au" placeholder="Au" class="formBox" />               
-            </div>
-            <div>
-        <label for="Anst">
-            <input type="text" id="an" placeholder="An" class="formBox" />
-            <label for="pos">
-                <input type="number" id="ps" placeholder="P" class="formBox" />
-            </div>
+                <label for="yr">
+                    <input type="text" id="au" placeholder="Au" class="formBox" />
+        </div>
+        <div>
+            <label for="Anst">
+                <input type="text" id="an" placeholder="An" class="formBox" />
+                <label for="pos">
+                    <input type="number" id="ps" placeholder="P" class="formBox" />
+        </div>
     </form>
     <div></div>
     <div>
@@ -93,3 +98,4 @@
         c.click();
     }
 </script>
+</html>
