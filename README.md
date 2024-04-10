@@ -28,7 +28,7 @@
     <div>
         <p class="border-block"> <img class="logo"
                 src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png"
-                width="300" height="150" />     
+                width="300" height="150">     
     <h1>
         <b>JSON</b>
     </h1>
@@ -36,22 +36,22 @@
     <form>
         <div>
             <label for="Bezeichner">
-                <input type="text" id="Bezeichner" placeholder="Art" class="formBox" >
+                <input type="text" id="Bezeichner" placeholder="Art" class="formBox">
                 <label for="Spann">
-                    <input type="number" id="U" placeholder="U" class="formBox" />
+                    <input type="number" id="U" placeholder="U" class="formBox">
         <div>
             <label for="Amp">
-                <input type="number" id="A" placeholder="A" class="formBox" >
+                <input type="number" id="A" placeholder="A" class="formBox">
                 <label for="yr">
-                    <input type="text" id="au" placeholder="Au" class="formBox" />
+                    <input type="text" id="au" placeholder="Au" class="formBox">
         <div>
             <label for="Anst">
-                <input type="text" id="an" placeholder="An" class="formBox" >
+                <input type="text" id="an" placeholder="An" class="formBox">
                 <label for="pos">
-                    <input type="number" id="ps" placeholder="P" class="formBox" />
+                    <input type="number" id="ps" placeholder="P" class="formBox">
     </form>
     <div>
-        <form ><input type="submit" id="btn" value="Send" />
+        <form ><input type="submit" id="btn" value="Send">
     <div id="msg">
     </div>
 <script>
