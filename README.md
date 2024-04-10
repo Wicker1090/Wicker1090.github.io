@@ -89,14 +89,12 @@
         <p class="border-block"> <img class="logo"
                 src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png" />
         </p>
-    </div>
-    <div>
-    </div>
-    <div>
+    </div>  
+  
         <h1>
             <b>JSON</b>
         </h1>
-    </div>
+  
     <div id="#div">
     </div>
 </head>
