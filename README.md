@@ -1,6 +1,6 @@
 <html lang="en">
 
-<head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +15,14 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+        
         div {
             max-width: 1200;            
             justify-content: center;
             align-items: center;
+        }
+        #div{
+            min-height: auto;
         }
         .border-block {
             writing-mode: Horizontal-tb;
@@ -71,7 +75,8 @@
             }
         }
     </style>
-    <div>
+    <head>
+    <div id="#div">
     </div>
     <div>
         <p class="border-block"> <img class="logo"
