@@ -12,7 +12,6 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
-
     div {
         max-width: 600px;
         height: 40px;
@@ -21,7 +20,6 @@
         margin-bottom: 30px;
     }
 </style>
-
 <head>
     <div>
         <p class="border-block"> <img class="logo"
@@ -32,9 +30,7 @@
     <h1>
         <b>JSON</b>
     </h1>
-
 </head>
-
 <body>
     <form>
         <div>
@@ -65,7 +61,6 @@
         const scrolled = window.scrollY;
         console.log(scrolled);
     })
-
     let Arts = [];
     const addArt = (ev) => {
         ev.preventDefault();
@@ -88,7 +83,6 @@
     document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('btn').addEventListener('click', addArt);
     });
-
     function save() {
         var c = document.createElement("a");
         c.download = "SOSO.txt";
