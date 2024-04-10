@@ -48,7 +48,7 @@
         main {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+           
         }
         input {
             width: 80%;
@@ -63,15 +63,20 @@
         }
         img{
         display:block;}
+
         div {
-            flex-basis: 90%;
-            height: 50px;
+            flex-basis: 70%;
+            height: 60px;
             margin-bottom: 50px;
         }
 
-        @media (max-width: 250px) {
+        @media (max-width: 300px) {
             main {
+                background-color: black;
                 flex-wrap: nowrap;
+            }
+            div{
+                background-color: aqua;
             }
 
            
@@ -96,10 +101,9 @@
     </div>
 </head>
 <body>
-    <form class="#div">
-        <main>
-            <div></div>
-            <div class="formBox">	
+    <form>
+        <main>           
+            <div>	
                 <label for="Bezeichner">
                     <input type="text" id="Bezeichner" placeholder="Art" class="formBox">
                     <label for="Spann">
@@ -107,22 +111,23 @@
                         <label for="Amp">
                             <input type="number" id="A" placeholder="A"class="formBox">
             </div>
-            <div class="formBox">	
+            <div>	
                 <label for="yr">
                     <input type="text" id="au" placeholder="Au" class="formBox">
                     <label for="Anst">
                         <input type="text" id="an" placeholder="An" class="formBox">
                         <label for="pos">
                             <input type="number" id="ps" placeholder="P" class="formBox">
-            </div>
-            <div></div>
+            </div>           
         </main>
-    </form>
+    
     <div></div>
     <div>
-        <form ><input type="submit" id="btn" value="Send" class="formBox"> </form>
+    <input type="submit" id="btn" value="Send" class="formBox">
+    </form>
     </div>
     </div>
+
     <div id="msg">
     </div>
 </body>
