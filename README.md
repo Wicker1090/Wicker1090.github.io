@@ -105,11 +105,11 @@
         <main>           
             <div>	
                 <label for="Bezeichner">
-                    <input type="text" id="Bezeichner" placeholder="Art" class="formBox">
+                    <input type="text" id="Bezeichner" placeholder="Art" class="formBox"/>
                     <label for="Spann">
-                        <input type="number" id="U" placeholder="U"class="formBox">
+                        <input type="number" id="U" placeholder="U"class="formBox"/>
                         <label for="Amp">
-                            <input type="number" id="A" placeholder="A"class="formBox">
+                            <input type="number" id="A" placeholder="A"class="formBox"/>
             </div>
             <div>	
                 <label for="yr">
