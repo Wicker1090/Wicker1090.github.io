@@ -60,7 +60,7 @@
             height: 50px;
             margin-bottom: 0.5rem;
         }
-        @media (max-width: 250px) {
+        @media (max-width: 350px) {
             main {
                 flex-wrap: nowrap;
             }           
