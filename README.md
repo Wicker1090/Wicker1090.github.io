@@ -87,15 +87,14 @@
 </head>
 <body>
     <form>
-        <main>           
-            <div>	
+        <main>
+		<div></div>
                 <label for="Bezeichner">
                     <input type="text" id="Bezeichner" placeholder="Art" class="formBox"/>
                     <label for="Spann">
                         <input type="number" id="U" placeholder="U"class="formBox"/>
                         <label for="Amp">
-                            <input type="number" id="A" placeholder="A"class="formBox"/>
-            </div>
+                            <input type="number" id="A" placeholder="A"class="formBox"/>           
             <div>	
                 <label for="yr">
                     <input type="text" id="au" placeholder="Au" class="formBox">
