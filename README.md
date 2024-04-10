@@ -44,9 +44,8 @@
             justify-content: space-between;
         }
         input {
-            width: 80%;
-            border: 0;
-            padding: 0px;
+            width: 80%;            
+            padding: 1px;
             font-size: 18px;
             border: 5%
         }
