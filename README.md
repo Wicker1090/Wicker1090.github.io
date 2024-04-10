@@ -18,7 +18,6 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-
         div {
             max-width: 600px;
             height: 40px;
@@ -27,13 +26,10 @@
             margin-bottom: 30px;
         }
     </style>
-
-
     <div>
         <p class="border-block"> <img class="logo"
                 src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png"
-                width="300" height="150" />
-        </p>
+                width="300" height="150" />       
     </div>
     <h1>
         <b>JSON</b>
@@ -61,11 +57,9 @@
     </form>
     <div>
         <form ><input type="submit" id="btn" value="Send" />
-    </div>
-    
+    </div>    
     <div id="msg">
-    </div>
-    
+    </div>    
 </body>
 <script>
     window.addEventListener('scroll', () => {
@@ -73,7 +67,6 @@
         const scrolled = window.scrollY;
         console.log(scrolled);
     })
-
     let Arts = [];
     const addArt = (ev) => {
         ev.preventDefault();
@@ -96,7 +89,6 @@
     document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('btn').addEventListener('click', addArt);
     });
-
     function save() {
         var c = document.createElement("a");
         c.download = "SOSO.txt";
