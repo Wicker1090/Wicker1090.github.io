@@ -1,10 +1,7 @@
 <html lang="en">
-
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <style>
         body {
             background: url("https://cdn.pixabay.com/photo/2018/02/02/17/24/background-3125893_1280.jpg");
@@ -15,7 +12,6 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-        
         div {
             max-width: 600px;            
             justify-content: center;
@@ -28,15 +24,13 @@
         .formBox {
             padding: 0px;
 			width: 70px;			
-		}     
-        
+		}
         .logo {
             width: 280px;
             height: 120px;
             display: flex;
             justify-content: center;
             align-items: center;
-
         }
         h1,
         h2 {
@@ -48,7 +42,6 @@
         main {
             display: flex;
             flex-wrap: wrap;
-           
         }
         input {
             width: 80%;
@@ -63,13 +56,11 @@
         }
         img{
         display:block;}
-
         div {
             flex-basis: 70%;
             height: 60px;
             margin-bottom: 50px;
         }
-
         @media (max-width: 300px) {
             main {
                 background-color: black;
@@ -78,8 +69,6 @@
             div{
                 background-color: aqua;
             }
-
-           
         }
     </style>
     <head>
@@ -89,12 +78,10 @@
         <p class="border-block"> <img class="logo"
                 src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png" />
         </p>
-    </div>  
-  
+    </div>
         <h1>
             <b>JSON</b>
         </h1>
-  
     <div id="#div">
     </div>
 </head>
@@ -118,14 +105,12 @@
                             <input type="number" id="ps" placeholder="P" class="formBox">
             </div>           
         </main>
-    
     <div></div>
     <div>
     <input type="submit" id="btn" value="Send" class="formBox">
     </form>
     </div>
     </div>
-
     <div id="msg">
     </div>
 </body>
