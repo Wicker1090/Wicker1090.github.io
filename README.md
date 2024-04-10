@@ -25,9 +25,14 @@
             min-height: auto;
             max-width: 40;
         }
+        .formBox {
+			width: 16px;			
+			
+		}
         .border-block {
             writing-mode: Horizontal-tb;
         }
+        
         .logo {
             width: 280px;
             height: 120px;
@@ -49,6 +54,7 @@
             justify-content: space-between;
         }
         input {
+            width: 80%;
             border: 0;
             padding: 0px;
             font-size: 18px;
@@ -71,9 +77,7 @@
                 flex-wrap: nowrap;
             }
 
-            div {
-                flex-basis: 20%;
-            }
+           
         }
     </style>
     <head>
@@ -98,7 +102,7 @@
     <form class="#div">
         <main>
             <div></div>
-            <div id="#div">
+            <div class="formBox">	
                 <label for="Bezeichner">
                     <input type="text" id="Bezeichner" placeholder="Art">
                     <label for="Spann">
@@ -106,7 +110,7 @@
                         <label for="Amp">
                             <input type="number" id="A" placeholder="A">
             </div>
-            <div id="#div">
+            <div class="formBox">	
                 <label for="yr">
                     <input type="text" id="au" placeholder="Au" />
                     <label for="Anst">
@@ -119,7 +123,7 @@
     </form>
     <div></div>
     <div>
-        <form class="exampleText"> <input type="submit" id="btn" value="Send" /> </form>
+        <form ><input type="submit" id="btn" value="Send" /> </form>
     </div>
     </div>
     <div id="msg">
