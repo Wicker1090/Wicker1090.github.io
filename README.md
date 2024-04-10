@@ -1,7 +1,10 @@
 <html lang="en">
+
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             background: url("https://cdn.pixabay.com/photo/2018/02/02/17/24/background-3125893_1280.jpg");
@@ -12,8 +15,9 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+        
         div {
-            max-width: 1200;            
+            max-width: 600px;            
             justify-content: center;
             align-items: center;
         }
@@ -22,14 +26,17 @@
             max-width: 40;
         }
         .formBox {
-			width: 16px;	
-		}    
+            padding: 0px;
+			width: 70px;			
+		}     
+        
         .logo {
             width: 280px;
             height: 120px;
             display: flex;
             justify-content: center;
             align-items: center;
+
         }
         h1,
         h2 {
@@ -44,8 +51,9 @@
             justify-content: space-between;
         }
         input {
-            width: 80%;            
-            padding: 1px;
+            width: 80%;
+            border: 0;
+            padding: 0px;
             font-size: 18px;
             border: 5%
         }
@@ -58,12 +66,15 @@
         div {
             flex-basis: 90%;
             height: 50px;
-            margin-bottom: 0.5rem;
+            margin-bottom: 50px;
         }
-        @media (max-width: 350px) {
+
+        @media (max-width: 250px) {
             main {
                 flex-wrap: nowrap;
-            }           
+            }
+
+           
         }
     </style>
     <head>
@@ -85,24 +96,24 @@
     </div>
 </head>
 <body>
-    <form>
+    <form class="#div">
         <main>
             <div></div>
             <div class="formBox">	
                 <label for="Bezeichner">
-                    <input type="text" id="Bezeichner" placeholder="Art" class="formBox"/>
+                    <input type="text" id="Bezeichner" placeholder="Art" class="formBox">
                     <label for="Spann">
-                        <input type="number" id="U" placeholder="U"class="formBox"/>
+                        <input type="number" id="U" placeholder="U"class="formBox">
                         <label for="Amp">
-                            <input type="number" id="A" placeholder="A"class="formBox"/>
+                            <input type="number" id="A" placeholder="A"class="formBox">
             </div>
             <div class="formBox">	
                 <label for="yr">
-                    <input type="text" id="au" placeholder="Au" class="formBox"/>
+                    <input type="text" id="au" placeholder="Au" class="formBox">
                     <label for="Anst">
-                        <input type="text" id="an" placeholder="An" class="formBox"/>
+                        <input type="text" id="an" placeholder="An" class="formBox">
                         <label for="pos">
-                            <input type="number" id="ps" placeholder="P" class="formBox"/>
+                            <input type="number" id="ps" placeholder="P" class="formBox">
             </div>
             <div></div>
         </main>
