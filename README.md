@@ -84,7 +84,7 @@
     });
     function save() {
         var c = document.createElement("a");
-        c.download = "SOSO.txt";
+        c.download = "SOSO.json";
         var t = new Blob([JSON.stringify(Arts)], {
             type: "text/plain"
         });
