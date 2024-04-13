@@ -55,7 +55,7 @@
                     <input type="number" id="ps" placeholder="P" class="formBox" />    
     <div>
         <form ><input type="submit" id="btn" value="Send" />
-    </div>    
+      
     <div id="msg">
     </div>    
 </body>
