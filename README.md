@@ -1,6 +1,7 @@
-
+<!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +18,7 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+
         div {
             max-width: 600px;
             height: 40px;
@@ -25,35 +27,45 @@
             margin-bottom: 30px;
         }
     </style>
+
+
     <div>
         <p class="border-block"> <img class="logo"
-                src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/weiter%20(1).png"
-                width="300" height="150">     
+                src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/LOGO.png"
+                width="300" height="150" />
+        </p>
+    </div>
     <h1>
         <b>JSON</b>
     </h1>
+</head>
+
 <body>
     <form>
         <div>
             <label for="Bezeichner">
-                <input type="text" id="Bezeichner" placeholder="Art" class="formBox">
+                <input type="text" id="Bezeichner" placeholder="Art" class="formBox" >
                 <label for="Spann">
-                    <input type="number" id="U" placeholder="U" class="formBox">
+                    <input type="number" id="U" placeholder="U" class="formBox" />
         <div>
             <label for="Amp">
-                <input type="number" id="A" placeholder="A" class="formBox">
+                <input type="number" id="A" placeholder="A" class="formBox" >
                 <label for="yr">
-                    <input type="text" id="au" placeholder="Au" class="formBox">
+                    <input type="text" id="au" placeholder="Au" class="formBox" />
         <div>
             <label for="Anst">
-                <input type="text" id="an" placeholder="An" class="formBox">
+                <input type="text" id="an" placeholder="An" class="formBox" >
                 <label for="pos">
-                    <input type="number" id="ps" placeholder="P" class="formBox">
+                    <input type="number" id="ps" placeholder="P" class="formBox" />
     </form>
     <div>
-        <form ><input type="submit" id="btn" value="Send">
+        <form ><input type="submit" id="btn" value="Send" />
+    </div>
+    
     <div id="msg">
     </div>
+    
+</body>
 <script>
     window.addEventListener('scroll', () => {
         const scrolable = document.documentElement.scrollHeight - window.innerHeight;
@@ -82,14 +94,17 @@
     document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('btn').addEventListener('click', addArt);
     });
+
     function save() {
         var c = document.createElement("a");
-        c.download = "SOSO.json";
-        var t = new Blob([JSON.stringify(Arts)], {
-            type: "text/plain"
-        });
+        c.download = "SOSO";
+        var d = new Date(2013, 12, 5, 16, 23, 45, 600);
+        var t =  new File([JSON.stringify(Arts)], "Draft1.txt", {type: "text/plain", lastModified: d})
+        //new Blob([JSON.stringify(Arts)], {
+        //    type: "text/plain"
+       // });
         c.href = window.URL.createObjectURL(t);
         c.click();
     }
 </script>
-
+</html>
