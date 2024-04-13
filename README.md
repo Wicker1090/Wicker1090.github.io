@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 
 <html lang="en">
 
@@ -53,8 +52,7 @@
             <label for="Anst">
                 <input type="text" id="an" placeholder="An" class="formBox" >
                 <label for="pos">
-                    <input type="number" id="ps" placeholder="P" class="formBox" />
-    </form>
+                    <input type="number" id="ps" placeholder="P" class="formBox" />    
     <div>
         <form ><input type="submit" id="btn" value="Send" />
     </div>    
@@ -101,4 +99,4 @@
         c.click();
     }
 </script>
-</html>
+
