@@ -18,7 +18,6 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-
         div {
             max-width: 600px;
             height: 40px;
@@ -27,8 +26,6 @@
             margin-bottom: 30px;
         }
     </style>
-
-
     <div>
         <p class="border-block"> <img class="logo"
                 src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/LOGO.png"
@@ -60,11 +57,9 @@
     </form>
     <div>
         <form ><input type="submit" id="btn" value="Send" />
-    </div>
-    
+    </div>    
     <div id="msg">
-    </div>
-    
+    </div>    
 </body>
 <script>
     window.addEventListener('scroll', () => {
@@ -94,7 +89,6 @@
     document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('btn').addEventListener('click', addArt);
     });
-
     function save() {
         var c = document.createElement("a");
         c.download = "SOSO";
