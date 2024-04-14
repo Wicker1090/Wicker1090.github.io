@@ -28,9 +28,7 @@
     <div>
         <p class="border-block"> <img class="logo"
                 src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/LOGO.png"
-                width="300" height="150" />
-        </p>
-    </div>
+                width="300" height="140"/>
     <h1>
         <b>JSON</b>
     </h1>
