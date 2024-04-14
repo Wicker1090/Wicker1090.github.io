@@ -80,7 +80,6 @@
     <h1>
         <b>JSON</b>
     </h1>
-
 <body>
     <form clas="small">
         <div class="doau">           
@@ -95,8 +94,7 @@
         <div class ="doau">
             <form ><input type="submit" id="btn" value="Send" >      
     <div id="msg">
-    </div>    
-</body>
+    </div>
 <script>
     window.addEventListener('scroll', () => {
         const scrolable = document.documentElement.scrollHeight - window.innerHeight;
