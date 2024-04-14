@@ -15,9 +15,9 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }        
-        div {
-            max-width: 900px;
-            height: 80px;
+        div {           
+            max-width: 1440px;
+            height: 145px;
             justify-content: center;
             align-items: center;
             margin-bottom: 90px;
@@ -26,7 +26,6 @@
         }
         .formBox{
             max-width: 180px;           
-            grid-auto-flow: column;
         }
         .Logo{
             list-style: none;
@@ -34,7 +33,7 @@
             background-color: red;
             margin-left: 20%;
             margin-right: 30%;
-            width: 90%;
+            width: 70%;
         }
         .doau{
             height: 10px;
@@ -44,6 +43,13 @@
             width: 100%;
             height: 5%;
             margin-bottom: 20px;
+        }
+        .dzau{ 
+            margin-left: 30%;           
+            margin-bottom: 20px;
+            margin-top: 2%;  
+            height: 10px;
+           
         }
         .center{
             display: block;
@@ -56,6 +62,12 @@
             padding-top: 20px;
         }
     </style>
+    <form class="dzau">
+    <div class="dzau">           
+        <input class="formBox" type="text" id="Bezeichner" placeholder="Art"  >
+        <input type="number" id="U" placeholder="U" class="formBox" ></div>
+    </div>
+</form>
     <div>
         <p class="Logo"> <img            
                 src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/LOGO.png"
