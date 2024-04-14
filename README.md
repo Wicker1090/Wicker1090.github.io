@@ -17,7 +17,10 @@
         }
         p{
             border-block-color: yellow;
-        }     
+        }
+        h1{
+            border-block-color: yellow;
+        }
         div {       
             max-width: 1440px;
             height: 145px;            
