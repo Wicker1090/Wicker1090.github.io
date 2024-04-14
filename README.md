@@ -14,17 +14,26 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-        }
+        }        
         div {
             max-width: 600px;
-            height: 40px;
+            height: 80px;
             justify-content: center;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 90px;
+        }
+        .Logo{
+            border-block-color: yellow;
+            background-color: red;
+            justify-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
         }
     </style>
     <div>
-        <p class="border-block"> <img class="logo"
+        <p class="Logo"> <img            
                 src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/LOGO.png"
                 width="300" height="140">
         </p>
