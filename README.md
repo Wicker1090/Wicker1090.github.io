@@ -3,8 +3,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head>
-</head>
     <style>
         body {
             background: url("https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/Ball2400.png");
@@ -89,8 +87,7 @@
         <p class="Logo"> <img            
                 src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/LOGO300p.png"
                 width="140" height="140">
-        </p>
-  
+        </p>  
 <body>
     <form clas="small">
         <div class="doau">           
