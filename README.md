@@ -24,6 +24,7 @@
         h1{
              border-color:red;
             border-block-color: yellow;
+            border-block-style:dotted;
             border-bottom-style: dotted;
         }
         div {
