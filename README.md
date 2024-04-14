@@ -8,7 +8,7 @@
     <style>
         body {
             background: url("https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/Background.png");
-            color: blue;
+            color: white;
             font-family: Helvetica;
             background-size: cover;
             background-position: center center;
