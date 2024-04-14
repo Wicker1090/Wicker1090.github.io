@@ -1,10 +1,12 @@
 
 <html lang="en">
 
-<head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+</head>
     <style>
         body {
             background: url("https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/Background.png");
@@ -76,7 +78,7 @@
     <h1>
         <b>JSON</b>
     </h1>
-</head>
+
 <body>
     <form clas="small">
         <div class="doau">           
