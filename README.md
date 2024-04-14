@@ -19,8 +19,7 @@
         }
         h1{
              border-color:red;
-            border-block-color: yellow;
-            border-block-style:dotted;
+            border-block-color: blue;
         }
         div {
             border-color:red;
