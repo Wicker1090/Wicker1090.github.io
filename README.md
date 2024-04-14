@@ -13,15 +13,18 @@
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
-            background-attachment: fixed;            
+            background-attachment: fixed;
+            border-bottom-style: dotted;
         }
         p{
             border-color:red;
             border-block-color: yellow;
+            border-bottom-style: dotted;
         }
         h1{
              border-color:red;
             border-block-color: yellow;
+            border-bottom-style: dotted;
         }
         div {
             border-color:red;
@@ -30,6 +33,7 @@
             align-items: center;
             margin-bottom: 90px;
             border-block-color: yellow;
+            border-bottom-style: dotted;
         }
         .formBox{
             max-width: 140px;
