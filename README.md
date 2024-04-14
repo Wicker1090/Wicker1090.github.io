@@ -88,7 +88,7 @@
     <div>
         <p class="Logo"> <img            
                 src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/LOGO11.png"
-                width="300" height="140">
+                width="140" height="140">
         </p>
     <h1>
         <b>JSON</b>
