@@ -1,7 +1,5 @@
 
 <html lang="en">
-
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +22,6 @@
             align-items: center;
             margin-bottom: 90px;
             border-block-color: yellow;
-
         }
         .formBox{
             max-width: 180px;           
@@ -50,8 +47,7 @@
             margin-left: 30%;           
             margin-bottom: 20px;
             margin-top: 2%;  
-            height: 10px;
-           
+            height: 10px;           
         }
         .center{
             display: block;
@@ -86,16 +82,14 @@
             <input type="number" id="U" placeholder="U" class="formBox" ></div>
         <div class ="doau">
             <input type="number" id="A" placeholder="A" class="formBox" >
-            <input type="text" id="au" placeholder="Au" class="formBox" ></div>
-       
+            <input type="text" id="au" placeholder="Au" class="formBox" ></div>       
         <div class ="doau">
             <input type="text" id="an" placeholder="An" class="formBox" >
             <input type="number" id="ps" placeholder="P" class="formBox" ></div>  
         <div class ="doau">
             <form ><input type="submit" id="btn" value="Send" >      
     <div id="msg">
-    </div>    
-</body>
+    </div>  
 <script>
     window.addEventListener('scroll', () => {
         const scrolable = document.documentElement.scrollHeight - window.innerHeight;
