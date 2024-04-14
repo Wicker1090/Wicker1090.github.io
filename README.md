@@ -87,7 +87,7 @@
 </form>
     <div>
         <p class="Logo"> <img            
-                src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/LOGO11.png"
+                src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/LOGO300p.png"
                 width="140" height="140">
         </p>
     <h1>
