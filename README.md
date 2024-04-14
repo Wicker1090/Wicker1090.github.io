@@ -8,7 +8,7 @@
     <style>
         body {
             background: url("https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/Background.png");
-            color: white;
+            color: blue;
             font-family: Helvetica;
             background-size: cover;
             background-position: center center;
@@ -32,7 +32,6 @@
         <b>JSON</b>
     </h1>
 </head>
-
 <body>
     <form>
         <div>
@@ -51,8 +50,7 @@
                 <label for="pos">
                     <input type="number" id="ps" placeholder="P" class="formBox" />    
     <div>
-        <form ><input type="submit" id="btn" value="Send" />
-      
+        <form ><input type="submit" id="btn" value="Send" />      
     <div id="msg">
     </div>    
 </body>
