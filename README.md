@@ -21,6 +21,8 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 90px;
+            border-block-color: yellow;
+
         }
         .Logo{
             border-block-color: yellow;
