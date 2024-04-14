@@ -16,12 +16,15 @@
             background-attachment: fixed;            
         }
         p{
+            border-color:red;
             border-block-color: yellow;
         }
         h1{
+             border-color:red;
             border-block-color: yellow;
         }
-        div {       
+        div {
+            border-color:red;
             max-width: 1440px;
             height: 145px;            
             align-items: center;
