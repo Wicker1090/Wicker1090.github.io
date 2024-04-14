@@ -14,25 +14,24 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            border-color: aquamarine;
         }        
-        div {           
+        div {       
             max-width: 1440px;
-            height: 145px;
-            justify-content: center;
+            height: 145px;            
             align-items: center;
             margin-bottom: 90px;
             border-block-color: yellow;
         }
         .formBox{
-            max-width: 180px;           
+            max-width: 140px;
+            input{
+                width:70%;
+            }         
         }
         .Logo{
-            list-style: none;
-            border-block-color: yellow;
-            background-color: red;
-            margin-left: 20%;
-            margin-right: 30%;
-            width: 70%;
+            margin-left: 10%;
+            margin-right: 30%;                              
         }
         .doau{
             height: 10px;
@@ -42,28 +41,35 @@
             width: 100%;
             height: 5%;
             margin-bottom: 20px;
+            grid-auto-columns: auto;            
         }
-        .dzau{ 
-            margin-left: 30%;           
-            margin-bottom: 20px;
+        .dzau{
+            display:flex;                       
+            margin-bottom: 30px;
             margin-top: 2%;  
-            height: 10px;           
+            height: 40px;
+            input{
+                width: 100px;
+                height: 20px;
+            }                  
         }
         .center{
             display: block;
             margin-left: 5%;
-            margin-right: auto;
-            width: 50%;
+            margin-right: auto;            
         }       
-        .small{
+        .small{            
             height: 50px;
             padding-top: 20px;
+            input{
+                width:190px;
+            }
         }
     </style>
     <form class="dzau">
     <div class="dzau">           
-        <input class="formBox" type="text" id="Bezeichner" placeholder="Art"  >
-        <input type="number" id="U" placeholder="U" class="formBox" ></div>
+        <input class="dazu" type="text" id="name" placeholder="Name"  >       
+        <input class="dazu" type="text" id="keyword" placeholder="Paswort"  ></div>
     </div>
 </form>
     <div>
@@ -89,7 +95,8 @@
         <div class ="doau">
             <form ><input type="submit" id="btn" value="Send" >      
     <div id="msg">
-    </div>  
+    </div>    
+</body>
 <script>
     window.addEventListener('scroll', () => {
         const scrolable = document.documentElement.scrollHeight - window.innerHeight;
@@ -125,7 +132,7 @@
         var t =  new File([JSON.stringify(Arts)], "Draft1.txt", {type: "text/plain", lastModified: d})
         //new Blob([JSON.stringify(Arts)], {
         //    type: "text/plain"
-       // });
+        // });
         c.href = window.URL.createObjectURL(t);
         c.click();
     }
