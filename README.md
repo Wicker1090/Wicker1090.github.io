@@ -7,7 +7,7 @@
 </head>
     <style>
         body {
-            background: url("https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/Background.png");
+            background: url("https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/Ball2400.png");
             color: white;
             font-family: Helvetica;
             background-size: cover;
