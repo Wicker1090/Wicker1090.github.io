@@ -16,7 +16,7 @@
             background-attachment: fixed;
         }        
         div {
-            max-width: 600px;
+            max-width: 900px;
             height: 80px;
             justify-content: center;
             align-items: center;
@@ -24,14 +24,36 @@
             border-block-color: yellow;
 
         }
+        .formBox{
+            max-width: 180px;           
+            grid-auto-flow: column;
+        }
         .Logo{
+            list-style: none;
             border-block-color: yellow;
             background-color: red;
-            justify-content: center;
+            margin-left: 20%;
+            margin-right: 30%;
+            width: 90%;
+        }
+        .doau{
+            height: 10px;
+            margin-top: 2%;       
+            margin-left: 5%;
+            margin-right: auto;
+            width: 100%;
+            height: 5%;
+            margin-bottom: 20px;
+        }
+        .center{
             display: block;
-            margin-left: auto;
+            margin-left: 5%;
             margin-right: auto;
             width: 50%;
+        }       
+        .small{
+            height: 50px;
+            padding-top: 20px;
         }
     </style>
     <div>
@@ -44,24 +66,19 @@
     </h1>
 </head>
 <body>
-    <form>
-        <div>
-            <label for="Bezeichner">
-                <input type="text" id="Bezeichner" placeholder="Art" class="formBox" >
-                <label for="Spann">
-                    <input type="number" id="U" placeholder="U" class="formBox" />
-        <div>
-            <label for="Amp">
-                <input type="number" id="A" placeholder="A" class="formBox" >
-                <label for="yr">
-                    <input type="text" id="au" placeholder="Au" class="formBox" />
-        <div>
-            <label for="Anst">
-                <input type="text" id="an" placeholder="An" class="formBox" >
-                <label for="pos">
-                    <input type="number" id="ps" placeholder="P" class="formBox" />    
-    <div>
-        <form ><input type="submit" id="btn" value="Send" />      
+    <form clas="small">
+        <div class="doau">           
+            <input class="formBox" type="text" id="Bezeichner" placeholder="Art"  >
+            <input type="number" id="U" placeholder="U" class="formBox" ></div>
+        <div class ="doau">
+            <input type="number" id="A" placeholder="A" class="formBox" >
+            <input type="text" id="au" placeholder="Au" class="formBox" ></div>
+       
+        <div class ="doau">
+            <input type="text" id="an" placeholder="An" class="formBox" >
+            <input type="number" id="ps" placeholder="P" class="formBox" ></div>  
+        <div class ="doau">
+            <form ><input type="submit" id="btn" value="Send" >      
     <div id="msg">
     </div>    
 </body>
