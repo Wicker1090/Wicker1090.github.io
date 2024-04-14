@@ -13,9 +13,11 @@
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
-            background-attachment: fixed;
-            border-color: aquamarine;
-        }        
+            background-attachment: fixed;            
+        }
+        p{
+            border-block-color: yellow;
+        }     
         div {       
             max-width: 1440px;
             height: 145px;            
@@ -68,8 +70,8 @@
     </style>
     <form class="dzau">
     <div class="dzau">           
-        <input class="dazu" type="text" id="name" placeholder="Name"  >       
-        <input class="dazu" type="text" id="keyword" placeholder="Paswort"  ></div>
+        <input class="dazu" type="text" id="name" placeholder="Name" >       
+        <input class="dazu" type="text" id="keyword" placeholder="Paswort" >
     </div>
 </form>
     <div>
