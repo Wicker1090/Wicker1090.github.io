@@ -18,7 +18,7 @@
             border-block-color: yellow;
         }
         h1{
-             border-color:red;
+            border-color:red;
             border-block-color: blue;
         }
         div {
