@@ -81,7 +81,7 @@
         <p class="Logo"> <img            
                 src="https://raw.githubusercontent.com/Wicker1090/Wicker1090.github.io/main/Images/LOGO300p.png"
                 width="140" height="140">
-        </p>  
+        </p>       
 <body>
     <form clas="small">
         <div class="doau">           
@@ -94,18 +94,21 @@
             <input type="text" id="an" placeholder="An" class="formBox" >
             <input type="number" id="ps" placeholder="P" class="formBox" ></div>  
         <div class ="doau">
-            <form ><input type="submit" id="btn" value="Send" >      
+            <input type="submit" id="btn" value="Send" >      
     <div id="msg">
     </div>
+    </form>
 <script>
+    let Dat=new Date();
+    let hour=Dat.getHours();
+    let minute=Dat.getMinutes();
+    let secunde=Dat.getSeconds();
+    let d = "SOSO"+hour+"/"+minute+"/"+secunde;
     window.addEventListener('scroll', () => {
         const scrolable = document.documentElement.scrollHeight - window.innerHeight;
         const scrolled = window.scrollY;
         console.log(scrolled);
-    })
-    long currentTimeInMillis = System.currentTimeMillis();
-Date currentDate = new Date(currentTimeInMillis);
-String currentDateTime = currentDate.toString();    
+    })  
     let Arts = [];
     const addArt = (ev) => {
         ev.preventDefault();
@@ -118,7 +121,7 @@ String currentDateTime = currentDate.toString();
             P: document.getElementById('ps').value
         }
         Arts.push(art);
-        document.forms[0].reset();
+        document.forms[1].reset();
         save();
         console.warn('added', { Arts });
         let pre = document.querySelector('#msg pre');
@@ -129,13 +132,14 @@ String currentDateTime = currentDate.toString();
         document.getElementById('btn').addEventListener('click', addArt);
     });
     function save() {
+        let text = d.toString();
+        document.getElementById("msg");
         var c = document.createElement("a");
-        c.download = "SOSO"+currentDateTime;
-        var d = new Date(2013, 12, 5, 16, 23, 45, 600);
+        c.download = d;
         var t =  new File([JSON.stringify(Arts)], "Draft1.txt", {type: "text/plain", lastModified: d})
         //new Blob([JSON.stringify(Arts)], {
         //    type: "text/plain"
-        // });
+       // });
         c.href = window.URL.createObjectURL(t);
         c.click();
     }
