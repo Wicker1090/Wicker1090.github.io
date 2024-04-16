@@ -103,6 +103,9 @@
         const scrolled = window.scrollY;
         console.log(scrolled);
     })
+    long currentTimeInMillis = System.currentTimeMillis();
+Date currentDate = new Date(currentTimeInMillis);
+String currentDateTime = currentDate.toString();    
     let Arts = [];
     const addArt = (ev) => {
         ev.preventDefault();
@@ -127,7 +130,7 @@
     });
     function save() {
         var c = document.createElement("a");
-        c.download = "SOSO";
+        c.download = "SOSO"+currentDateTime;
         var d = new Date(2013, 12, 5, 16, 23, 45, 600);
         var t =  new File([JSON.stringify(Arts)], "Draft1.txt", {type: "text/plain", lastModified: d})
         //new Blob([JSON.stringify(Arts)], {
