@@ -110,9 +110,9 @@
             B: document.getElementById('Bezeichner').value,
             U: document.getElementById('U').value,
             A: document.getElementById('A').value,
-            An: document.getElementById('au').value,
-            Au: document.getElementById('an').value,
-            Y: document.getElementById('ps').value
+            n: document.getElementById('au').value,
+            u: document.getElementById('an').value,
+            P: document.getElementById('ps').value
         }
         Arts.push(art);
         document.forms[0].reset();
